@@ -131,7 +131,8 @@
 </head>
 
 
-<body style="background-color:rgb(251, 251, 251)">
+<body style="background-color:rgb(255, 255, 255)">
+  
 
   <section>
     <!-- this is the navbar area -->
@@ -144,10 +145,10 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/" >About</a>
+            <a class="nav-link" href="/">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="need" onclick="need()">Need</a>
+            <a class="nav-link" href="need">Need</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="share">Share</a>
@@ -156,13 +157,15 @@
       </div>
     </nav>
   </section>
-  <section style="background-color: #fdfdfd; text-align: center;">
-    <h1 style="font-size:100px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 25px;">WeShare
+
+  
+  <section style="background-color: #ffffff; text-align: center;">
+    <h1 style="font-size:100px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 25px;">Need</h1>
     </h1>
-    <div class="team-grid" style="background-color: #fdfbfd;">
+    <div class="team-grid" style="background-color: white">
       <div class="container">
         <div class="intro">
-          <h2 class="text-center">Let's Reshare our Joys with others </h2>
+          <h2 class="text-center">Look for the items of which you are in need</h2>
         </div>
         <div class="row people">
           <div class="col-md-4 col-lg-3 item">
@@ -212,51 +215,33 @@
         </div>
       </div>
     </div>
-    <section>
-      <div style="display: flex; justify-content: center; float: left; align-items: center; margin: 0 800px; margin-right: 10px; padding: 20px;">
-      <button style="font-size: 25px; padding: 15px 32px; background-color: green; color: white; display: inline;float: left;" id="mybutton1" onclick="need()">Need</button>
-      <button style="font-size: 25px; padding: 15px 32px; background-color: green; color: white; display: inline;float: left;" id = "mybutton2" onclick="share()">Share</button>
-    </div><br><br><br><br>
-
-  </section>
-  </section>
-
-  <footer class="bg-dark text-light">
-    <div class="container"><br>
-      <div class="row">
-        <div class="col-md-4">
-          <h4>Let's Reshare our Joys with others</h4>
-        </div>
-        <div class="col-md-4" style="text-align: center;">
-          <h3>WeShare</h3>
-        </div>
-        <div class="col-md-4">
-          <h3>Contact Us</h3>
-          <ul class="list-unstyled">
-            <li>Address: 1234 Main St, Anytown USA</li>
-            <li>Phone: 123-456-7890</li>
-            <li>Email: info@example.com</li>
-          </ul>
+      <div class="card" style="width: 18rem;height: 18rem;">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary" style="margin-top:65px ;">Go somewhere</a>
         </div>
       </div>
-  </footer>
-  <script>
-function need() {
-  window.location = '/need';
-}
-function share(){
-  window.location = '/share'
-}
-
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-
     
-
+    <footer class="bg-dark text-light">
+      <div class="container"><br>
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Let's Reshare our Joys with others</h4>
+          </div>
+          <div class="col-md-4" style="text-align: center;">
+            <h3>WeShare</h3>
+          </div>
+          <div class="col-md-4">
+            <h3>Contact Us</h3>
+            <ul class="list-unstyled">
+              <li>Address: 1234 Main St, Anytown USA</li>
+              <li>Phone: 123-456-7890</li>
+              <li>Email: info@example.com</li>
+            </ul>
+          </div>
+        </div>
+    </footer>
 </body>
-
-
 </html>

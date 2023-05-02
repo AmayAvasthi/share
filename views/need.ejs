@@ -3,6 +3,19 @@
 
 <head>
   <style>
+
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card {
+  width: 300px;
+  margin-right: 100px;
+}
+
     #title {
       text-align: center;
       background-color: #ffebcd;
@@ -110,6 +123,11 @@
     .team-grid .social a:hover {
       opacity: 1;
     }
+    .divide{
+      line-height: 10px;
+      height: 50px;
+      color: green;
+    }
 
     body {
       background-color: #ffebcd;
@@ -215,16 +233,54 @@
         </div>
       </div>
     </div>
-      <div class="card" style="width: 18rem;height: 18rem;">
-        <img src="" class="card-img-top" alt="...">
+    <hr class="divide">
+    <% for(let p of prod) {%>
+      <!-- <div class = "card-group">
+    <div class="card" style="width: 18rem;height: 18rem;">
+
+        <img src="<%=p.upload%>" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary" style="margin-top:65px ;">Go somewhere</a>
+          <h5 class="card-title"><%=p.description%></h5>
+          <p class="card-text"><%=p.description%></p>
+          <a href="#" class="btn btn-primary" style="margin-top:65px ;"><%=p.address%></a>
         </div>
       </div>
-    
-    <footer class="bg-dark text-light">
+      </div> -->
+      <!-- <div class="col-md-6 col-lg-4">
+      <div class="card-group">
+        <div class="card">
+          <div class="embed-responsive embed-responsive-1by1">
+          <div class="col-md-6 col-lg-4">
+          <img class="card-img-top" src="<%=p.upload%>" alt="Card image cap">
+          </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="d-inline-block">
+        <div class="card-group">
+          <div class="card">
+            <div class="embed-responsive embed-responsive-1by1">
+              <img class="card-img-top" src="<%=p.upload%>" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><%=p.title%></h5>
+              <p class="card-text"><%=p.description%></p>
+              <p class="card-text"><small class="text-muted">Shared by: <%=p.first_name +" "+ p.last_name %></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <%
+    }
+    %>
+    <!-- <footer class="bg-dark text-light">
       <div class="container"><br>
         <div class="row">
           <div class="col-md-4">
@@ -242,6 +298,6 @@
             </ul>
           </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>

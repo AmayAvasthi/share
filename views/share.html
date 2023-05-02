@@ -3,10 +3,10 @@
 
 <head>
   <style>
-    #title {
+    /* #title {
       text-align: center;
       background-color: #ffebcd;
-    }
+    } */
 
     img {
       max-width: 500px;
@@ -247,18 +247,30 @@
   </div>
   <div class="col-12">
   </div>
-  <div class="col-md-12">
+  <div class="col-md-6">
+    <label for="title" class="form-label">Name of the product</label>
+    <input type="text"; class = "form-control" id = "title" name = "title">
+  </div>
+  <div class="col-md-6">
     <label for="description" class="form-label">Add some description about the product</label>
     <input type="text" class="form-control" id="description" name = "description">
   </div>
-  <div class="col-md-4">
+  <!-- <div class="col-md-4">
     <label for="formFileSm" class="form-label">Upload product's image</label>
-    <input class="form-control form-control-sm" id="formFileSm" type="file" name = "upload">
+    <input class="form-control form-control-sm" id="formFileSm" type="image" name = "upload">
+  </div> -->
+  <!-- 
+    <label for="image">Choose an image:</label>
+    <input type="file" id="image" name="image"> -->
+    <div class = "col-md-12">
+    <label for="upload">Image URL:</label>
+    <input type="text" id="upload" name="upload">
   </div>
   <div class="col-12">
     <button type="submit" class="btn btn-primary">Submit</button>
   </div>
 </form>
+
 </section>
 <footer class="bg-dark text-light">
   <div class="container"><br>

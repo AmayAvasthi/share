@@ -3,23 +3,10 @@
 
 <head>
   <style>
-
-.card-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
-}
-
-.card {
-  width: 300px;
-  margin-right: 100px;
-}
-
-    #title {
+    /* #title {
       text-align: center;
       background-color: #ffebcd;
-    }
+    } */
 
     img {
       max-width: 500px;
@@ -123,11 +110,6 @@
     .team-grid .social a:hover {
       opacity: 1;
     }
-    .divide{
-      line-height: 10px;
-      height: 50px;
-      color: green;
-    }
 
     body {
       background-color: #ffebcd;
@@ -149,8 +131,7 @@
 </head>
 
 
-<body style="background-color:rgb(255, 255, 255)">
-  
+<body style="background-color:white">
 
   <section>
     <!-- this is the navbar area -->
@@ -175,15 +156,13 @@
       </div>
     </nav>
   </section>
-
-  
-  <section style="background-color: #ffffff; text-align: center;">
-    <h1 style="font-size:100px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 25px;">Need</h1>
+  <section style="background-color: white; text-align: center;">
+    <h1 style="font-size:100px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 25px;">Share</h1>
     </h1>
-    <div class="team-grid" style="background-color: white">
+    <div class="team-grid" style="background-color: white;">
       <div class="container">
         <div class="intro">
-          <h2 class="text-center">Look for the items of which you are in need</h2>
+          <h2 class="text-center">Share your joys with others</h2>
         </div>
         <div class="row people">
           <div class="col-md-4 col-lg-3 item">
@@ -233,84 +212,42 @@
         </div>
       </div>
     </div>
-    <hr class="divide">
-    <% for(let p of prod) {%>
-      <!-- <div class = "card-group">
-    <div class="card" style="width: 18rem;height: 18rem;">
+  </section>
+</section> 
 
-        <img src="<%=p.upload%>" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title"><%=p.description%></h5>
-          <p class="card-text"><%=p.description%></p>
-          <a href="#" class="btn btn-primary" style="margin-top:65px ;"><%=p.address%></a>
-        </div>
+
+<% if (prod) { %>
+  <h1><%=prod.title%></h1>
+  <p><img src="<%=prod.upload%>"></p>
+  <p>Phone Number: <%=prod.phone_number%></p>
+  <p>Address: <%=prod.address%></p>
+  <p>City: <%=prod.city%></p>
+  <p>Zip: <%=prod.zip%></p>
+  <p>Description: <%=prod.description%></p>
+<% } else { %>
+  <p>No product found</p>
+<% } %>
+
+</section>
+<footer class="bg-dark text-light">
+  <div class="container"><br>
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Let's Reshare our Joys with others</h4>
       </div>
-      </div> -->
-      <!-- <div class="col-md-6 col-lg-4">
-      <div class="card-group">
-        <div class="card">
-          <div class="embed-responsive embed-responsive-1by1">
-          <div class="col-md-6 col-lg-4">
-          <img class="card-img-top" src="<%=p.upload%>" alt="Card image cap">
-          </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div> -->
-
-      <div class="d-inline-block">
-        <div class="card-group">
-          <div class="card">
-            <div class="embed-responsive embed-responsive-1by1">
-              <img class="card-img-top" src="<%=p.upload%>" alt="Card image cap">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title"><%=p.title%></h5>
-              <p class="card-text"><%=p.description%></p>
-              <p class="card-text"><small class="text-muted">Shared by: <%=p.first_name +" "+ p.last_name %></small></p>
-              <div class="col-12">
-                <!-- <a  class="btn btn-primary" href="/product/<%=p.id%>">Details</a> -->
-                <a type="submit" class="btn btn-primary" href="/edit_product/<%=p.id%>">Update</a>
-              
-                <form action = "delete_product" method = "Post">
-                  <br>
-                  <input type = "hidden" name = "id" value = "<%=p.id%>">
-                  <button type="submit" class="btn btn-primary">Delete</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="col-md-4" style="text-align: center;">
+        <h3>WeShare</h3>
       </div>
-      
-      <%
-    }
-    %>
+      <div class="col-md-4">
+        <h3>Contact Us</h3>
+        <ul class="list-unstyled">
+          <li>Address: 1234 Main St, Anytown USA</li>
+          <li>Phone: 123-456-7890</li>
+          <li>Email: info@example.com</li>
+        </ul>
+      </div>
+    </div>
+</footer>
 
-
-    
-    <!-- <footer class="bg-dark text-light">
-      <div class="container"><br>
-        <div class="row">
-          <div class="col-md-4">
-            <h4>Let's Reshare our Joys with others</h4>
-          </div>
-          <div class="col-md-4" style="text-align: center;">
-            <h3>WeShare</h3>
-          </div>
-          <div class="col-md-4">
-            <h3>Contact Us</h3>
-            <ul class="list-unstyled">
-              <li>Address: 1234 Main St, Anytown USA</li>
-              <li>Phone: 123-456-7890</li>
-              <li>Email: info@example.com</li>
-            </ul>
-          </div>
-        </div>
-    </footer> -->
 </body>
 </html>

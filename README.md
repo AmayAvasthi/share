@@ -8,7 +8,7 @@ Scalability: Modular architecture allows for the creation of reusable, self-cont
 Maintainability: Modular apps are easier to maintain since they have clear boundaries and well-defined interfaces. This makes it easier to debug and update specific parts of the app without affecting the rest of the codebase.
 
 Code organization: A modular architecture provides a clear separation of concerns, making it easier to organize the code into logical modules that are easier to understand and maintain.
-
+![240355672-971d5b6b-e9cf-4d81-8c18-9e394e6dd470](https://github.com/AmayAvasthi/share/assets/81138166/ddd06460-5709-4b54-bdd7-cc9d147a0f3a)
 To create a modular app in Angular, follow these steps:
 
 Identify the different features or functionalities of your app and group them into separate modules.
@@ -17,7 +17,7 @@ Create a module for each group of related features. Each module should have its 
 
 Use Angular's NgModule decorator to define each module and its dependencies. NgModule allows you to specify which components, services, directives, and pipes are part of the module, as well as which other modules it depends on.
 
-Use lazy loading to load modules on demand, rather than all at once when the app starts up. This can improve the app's performance and reduce its initial load time.![240355672-971d5b6b-e9cf-4d81-8c18-9e394e6dd470](https://github.com/AmayAvasthi/share/assets/81138166/ddd06460-5709-4b54-bdd7-cc9d147a0f3a)
+Use lazy loading to load modules on demand, rather than all at once when the app starts up. This can improve the app's performance and reduce its initial load time.
 
 
 Use Angular's dependency injection system to inject services into components and other services. This helps to reduce coupling between different parts of the app and makes it easier to maintain and test.

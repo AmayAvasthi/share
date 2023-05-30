@@ -1,4 +1,5 @@
 Assignment-2 Q2) Building a modular app is crucial in Angular development. Discuss the advantages of building a modular app and explain how you can create a modular app in Angular.
+![240355447-c0714e79-80e1-4aa5-90ae-86625e87b9ec](https://github.com/AmayAvasthi/share/assets/81138166/29122a92-3f6a-4f0b-89e7-c27fed7347b3)
 
 SOLn:- Building a modular app in Angular is crucial for several reasons, including:
 
@@ -16,11 +17,13 @@ Create a module for each group of related features. Each module should have its 
 
 Use Angular's NgModule decorator to define each module and its dependencies. NgModule allows you to specify which components, services, directives, and pipes are part of the module, as well as which other modules it depends on.
 
-Use lazy loading to load modules on demand, rather than all at once when the app starts up. This can improve the app's performance and reduce its initial load time.
+Use lazy loading to load modules on demand, rather than all at once when the app starts up. This can improve the app's performance and reduce its initial load time.![240355672-971d5b6b-e9cf-4d81-8c18-9e394e6dd470](https://github.com/AmayAvasthi/share/assets/81138166/ddd06460-5709-4b54-bdd7-cc9d147a0f3a)
+
 
 Use Angular's dependency injection system to inject services into components and other services. This helps to reduce coupling between different parts of the app and makes it easier to maintain and test.
 
 Overall, building a modular app in Angular is a best practice that can make your app more scalable, maintainable, and organized. By following the steps above, you can create a modular architecture that will help you to build high-quality, scalable Angular apps.
+![240357430-fdf3589f-d9b9-4978-a1c0-a909e8f6a4d8](https://github.com/AmayAvasthi/share/assets/81138166/0c72b7e1-2cb6-4df0-814a-dfff0d9e42c2)
 
 3)Binding HTML content is an essential task in Angular development. Discuss the different types of data binding available in Angular and explain any one.
 
@@ -33,6 +36,7 @@ Property binding: Property binding is another one-way data binding technique tha
 Event binding: Event binding is a one-way data binding technique that allows you to bind an event on a DOM element to a method in your component class. This is achieved by enclosing the event name in parentheses (eventName)="methodName()". When the event is triggered, the method in the component class is executed.
 
 Two-way binding: Two-way binding is a two-way data binding technique that allows you to bind a property of a DOM element to a property of a component class, and also update the component property when the user changes the value in the DOM element. This is achieved by enclosing the property in square brackets and parentheses [(propertyName)]="expression". When the user changes the value in the DOM element, the expression is updated in the component class.
+![240359444-fbe0cd60-a5c7-405c-aef1-5668c8ca29e7](https://github.com/AmayAvasthi/share/assets/81138166/069ff41e-ba67-423a-9bb8-61042d9ac696)
 
 Two way binding technique example:-
 
